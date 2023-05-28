@@ -5,6 +5,6 @@ from django.db import models
 
 class Datos(models.Model):
     nombre = models.CharField(max_length=40)
-    numero = models.IntegerField
-    generacion = models.IntegerField
+    numero = models.IntegerField(default=0)
+    generacion = models.IntegerField(default=0)
     tipo = models.CharField(max_length=40)
